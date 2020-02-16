@@ -22,8 +22,9 @@ body {
 .wrapper {
     width: 84%;
     max-width: 1210px;
-    margin-right: 9%;
-    margin-left: 9%;
+    /* margin-right: 9%;
+    margin-left: 9%; */
+    margin: 0 auto;
 }
 
 body {
@@ -744,11 +745,6 @@ footer h3 {
 }
 
 @media (max-width: 360px) {
-
-    .wrapper {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 
     header {
         height: 62vh;
