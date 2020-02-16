@@ -497,7 +497,7 @@ footer h3 {
 
     .vase-photo {
         min-width: 435px;
-        margin-bottom: 160px;
+        margin-bottom: 120px;
     }
 
     .vase-article {
@@ -547,7 +547,7 @@ footer h3 {
 
     .vase-photo {
         min-width: 435px;
-        margin-bottom: 200px;
+        margin-bottom: 130px;
         margin-left: 100px;
     }
 
@@ -596,11 +596,15 @@ footer h3 {
     }
 
     .vase {
-        height: 160vh;
+        height: 170vh;
+    }
+
+    .vase-photo {
+        margin-bottom: 200px;
     }
 
     .vase-article {
-        margin-top: 750px;
+        margin-top: 820px;
     }
 }
 
@@ -690,7 +694,7 @@ footer h3 {
 
     .vase-article {
         margin-left: 5px;
-        margin-top: 750px;
+        margin-top: 800px;
     }
 }
 
@@ -736,11 +740,11 @@ footer h3 {
 
     .vase-photo {
         min-width: 270px;
-        margin-bottom: 280px;
+        margin-bottom: 250px;
     }
 
     .vase-article {
-        margin-top: 630px;
+        margin-top: 700px;
     }
 }
 
