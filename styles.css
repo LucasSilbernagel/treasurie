@@ -459,7 +459,7 @@ footer h3 {
     .vase-article {
         position: relative;
         min-width: 600px;
-        margin-left: 280px;
+        margin-left: 240px;
         margin-top: 900px;
         text-align: center;
     }
@@ -486,9 +486,13 @@ footer h3 {
         margin: 0 auto;
     }
 
+    .countries img {
+        height: 420px;
+    }
+
     h5 {
         margin-left: 100px;
-        margin-top: 100px;
+        margin-top: 120px;
     }
 
     .adventures-flex {
@@ -503,6 +507,7 @@ footer h3 {
     .vase-article {
         min-width: 250px;
         margin-top: 800px;
+        margin-left: 280px;
     }
 
     .vase-article p {
@@ -559,6 +564,11 @@ footer h3 {
 
     .vase-article p {
         height: 55%;
+        width: 100%;
+    }
+
+    .name,
+    .email {
         width: 100%;
     }
 
@@ -679,12 +689,16 @@ footer h3 {
 
     h5 {
         margin-left: 70px;
-        margin-top: 70px;
+        margin-top: 85px;
         height: 50px;
     }
 
     .adventures {
         height: 190vh;
+    }
+
+    .adventures img {
+        height: 300px;
     }
 
     .vase-photo {
@@ -693,7 +707,7 @@ footer h3 {
     }
 
     .vase-article {
-        margin-left: 5px;
+        margin-left: 50px;
         margin-top: 800px;
     }
 }
@@ -745,6 +759,7 @@ footer h3 {
 
     .vase-article {
         margin-top: 700px;
+        margin-left: 0;
     }
 }
 
@@ -827,7 +842,7 @@ footer h3 {
 
     .vase-photo {
         min-width: 270px;
-        margin-bottom: 250px;
+        margin-bottom: 220px;
     }
 
     .vase-article {
