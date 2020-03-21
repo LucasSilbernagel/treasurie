@@ -128,7 +128,7 @@ a:hover {
 .mobile-nav a {
     margin-left: 5px;
     display: inline-block;
-    width: 100%;
+    width: 95%;
 }
 
 #hamburger-toggle:checked ~ .mobile-nav {
