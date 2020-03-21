@@ -22,8 +22,6 @@ body {
 .wrapper {
     width: 84%;
     max-width: 1210px;
-    /* margin-right: 9%;
-    margin-left: 9%; */
     margin: 0 auto;
 }
 
@@ -89,6 +87,123 @@ a {
 a:hover {
     border-bottom: 2px solid #00C6FF;
 }
+
+/* mobile menu style begins */
+.hamburger {
+    display: flex;
+    align-items: flex-start;
+    display: none;
+}
+
+.hamburger-toggle {
+    visibility: hidden;
+}
+
+.mobile-nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background: #FFFFFF;
+    padding-left: 0;
+    padding-top: 0;
+    z-index: 20;
+    top: 60px;
+    right: 0px;
+    transition: all 0.4s ease-in;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 140px;
+}
+
+.mobile-nav li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.mobile-nav li:hover {
+    background: #DCDCDC;
+}
+
+.mobile-nav a {
+    margin-left: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+#hamburger-toggle:checked ~ .mobile-nav {
+    opacity: 100%;
+    visibility: visible;
+}
+
+.hamburger-lines {
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.hamburger-lines:hover {
+    cursor: pointer;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    background: #000000;
+    transition: all 0.4s ease-in-out;
+}
+
+.hamburger-line.line1 {
+    top: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.hamburger-line.line2,
+.hamburger-line.line2b {
+    top: 50%;
+    border-radius: 8px;
+    background: #000000;
+    transform: translateY(-50%);
+}
+
+.hamburger-line.line3 {
+    bottom: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.hamburger-toggle:checked + label .line1,
+.hamburger-toggle:checked + label .line3 {
+    opacity: 0%;
+}
+
+.hamburger-toggle:checked + label .line1 {
+    top: -6px;
+}
+
+.hamburger-toggle:checked + label .line3 {
+    bottom: -6px;
+}
+
+.hamburger-toggle:checked + label .middle {
+    height: 4px;
+    background: #000000;
+}
+
+.hamburger-toggle:checked + label .line2 {
+    transform: rotate(40deg);
+    background: #000000;
+}
+
+.hamburger-toggle:checked + label .line2b {
+    transform: rotate(-40deg);
+}
+/* mobile menu style ends */
 
 h1 {
     font-size: 4.4rem;
@@ -664,8 +779,12 @@ footer h3 {
 
 @media (max-width: 580px) {
 
-    ul {
+    .main-nav {
         display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
     }
 
     h4:after {
