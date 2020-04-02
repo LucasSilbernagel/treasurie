@@ -14,10 +14,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 /* General website styles */
 
-html,
+/* html,
 body {
     height: 100%;
-}
+} */
 
 .wrapper {
     width: 84%;
@@ -48,7 +48,7 @@ h2 {
 
 header {
     width: 100%;
-    height: 92%;
+    padding-bottom: 265px;
     background-image: url("./assets/header-image.jpg");
     background-size: cover;
     background-position: center center;
@@ -335,7 +335,7 @@ h2 {
     .adventures {
         background: #E0FFFF;
         padding-top: 50px;
-        height: 120vh;
+        padding-bottom: 150px;
         position: relative;
     }
 
@@ -381,7 +381,7 @@ h2 {
 
     .vase {
         margin-top: 370px;
-        height: 60vh;
+        padding-bottom: 450px;
         position: relative;
     }
 
@@ -394,7 +394,7 @@ h2 {
         position: absolute;
         width: 39%;
         min-width: 560px;
-        bottom: 42%;
+        bottom: 45%;
         z-index: 20;
         box-shadow: #B0E0E6 30px 30px;
     }
@@ -404,7 +404,8 @@ h2 {
         min-width: 433px;
         margin-left: 680px;
         position: absolute;
-        bottom: 65%;
+        bottom: 30%;
+        padding-bottom: 200px;
     }
 
     .vase-article h2 {
@@ -416,7 +417,6 @@ h2 {
         font-size: 1.3rem;
         line-height: 2rem;
         width: 90%;
-        height: 35vh;
     }
 
     .vase-button {
@@ -431,14 +431,13 @@ h2 {
 
     .contact {
         background: #222428;
-        height: 125vh;
-        padding-top: 100px;
-        margin-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 50px;
     }
 
     .contact h2 {
         color: #F2DCD9;
-        margin-bottom: 90px;
+        margin-bottom: 70px;
     }
 
     input,
@@ -465,13 +464,13 @@ h2 {
     .name,
     .email {
         width: calc(50% - 18px);
-        height: 12vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
         min-width: 282px;
     }
 
     .message {
         width: 100%;
-        height: 40vh;
         padding-bottom: 200px;
         margin-bottom: 30px;
         padding-top: 25px;
@@ -499,7 +498,6 @@ h2 {
 
 footer {
     background: #0E191E;
-    height: 14vh;
 }
 
 footer h3 {
@@ -511,10 +509,11 @@ footer h3 {
 
 .footer-flex {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Footer styles end */
@@ -535,6 +534,15 @@ footer h3 {
 
     .blog h2 {
         width: 45%;
+    }
+
+    .vase {
+        padding-bottom: 0;
+        height: 500px;
+    }
+
+    .vase-photo {
+        bottom: 50%;
     }
 
     .vase-article {
@@ -562,13 +570,17 @@ footer h3 {
     }
 
     .vase {
-        height: 150vh;
-        margin-top: 0px;
+        padding-bottom: 800px;
+    }
+
+    .vase-flex {
+        height: 900px;
     }
 
     .vase-photo {
         margin-left: 230px;
         margin-bottom: 50px;
+        bottom: 64%;
     }
 
     .vase-article {
@@ -577,6 +589,7 @@ footer h3 {
         margin-left: 240px;
         margin-top: 900px;
         text-align: center;
+        bottom: 600px;
     }
 
     .vase-article h2 {
@@ -591,14 +604,15 @@ footer h3 {
 @media (max-width: 1120px) {
 
     .adventures {
-        height: 270vh;
+        height: 1800px;
+        padding-bottom: 0;
     }
 
     .countries {
-        height: 78vh;
         width: 45%;
         min-width: 420px;
         margin: 0 auto;
+        margin-bottom: 80px;
     }
 
     .countries img {
@@ -607,22 +621,30 @@ footer h3 {
 
     h5 {
         margin-left: 100px;
-        margin-top: 120px;
+        margin-top: 170px;
+        margin-bottom: 0;
+        height: 70px;
     }
 
     .adventures-flex {
         flex-direction: column;
     }
 
+    .vase {
+        padding-bottom: 700px;
+    }
+
     .vase-photo {
         min-width: 435px;
-        margin-bottom: 120px;
+        margin-bottom: 0px;
+        bottom: 85%;
     }
 
     .vase-article {
-        min-width: 250px;
+        min-width: none;
         margin-top: 800px;
-        margin-left: 280px;
+        margin-left: 200px;
+        padding-bottom: 0;
     }
 
     .vase-article p {
@@ -634,10 +656,6 @@ footer h3 {
 
     h4:after {
         width: 12%;
-    }
-
-    .blog {
-        height: 75vh;
     }
 
     .blog p {
@@ -661,20 +679,18 @@ footer h3 {
         margin-top: 20px;
     }
 
-    .vase {
-        height: 150vh;
-    }
-
     .vase-photo {
         min-width: 435px;
-        margin-bottom: 130px;
+        margin-bottom: 0;
+        bottom: 85%;
         margin-left: 100px;
     }
 
     .vase-article {
-        min-width: 300px;
         margin-top: 800px;
-        margin-left: 170px;
+        margin-left: 80px;
+        padding-bottom: 0;
+        bottom: 65%;
     }
 
     .vase-article p {
@@ -687,10 +703,6 @@ footer h3 {
         width: 100%;
     }
 
-    .contact {
-        height: 130vh;
-    }
-
     .input-flex {
         flex-direction: column;
     }
@@ -701,10 +713,6 @@ footer h3 {
 }
 
 @media (max-width: 850px) {
-
-    .blog {
-        height: 80vh;
-    }
 
     .blog-button {
         margin-top: 20px;
@@ -720,16 +728,13 @@ footer h3 {
         margin-right: 100px;
     }
 
-    .vase {
-        height: 170vh;
-    }
-
     .vase-photo {
         margin-bottom: 200px;
+        bottom: 55%;
     }
 
     .vase-article {
-        margin-top: 820px;
+        margin-top: 800px;
     }
 }
 
@@ -755,7 +760,9 @@ footer h3 {
     }
 
     .vase-article {
-        margin-left: 100px;
+        margin-left: 50px;
+        min-width: 400px;
+        margin-top: 750px;
     }
 }
 
@@ -791,10 +798,6 @@ footer h3 {
         width: 18%;
     }
 
-    .blog {
-        height: 90vh;
-    }
-
     .blog-button {
         margin-left: 100px;
         margin-right: 100px;
@@ -803,17 +806,16 @@ footer h3 {
 
     .countries {
         min-width: 300px;
-        height: 55vh;
+    }
+
+    .adventures {
+        height: 1500px;
     }
 
     h5 {
         margin-left: 70px;
-        margin-top: 85px;
+        margin-top: 120px;
         height: 50px;
-    }
-
-    .adventures {
-        height: 190vh;
     }
 
     .adventures img {
@@ -823,15 +825,22 @@ footer h3 {
     .vase-photo {
         min-width: 350px;
         margin-bottom: 250px;
+        bottom: 64%;
     }
 
     .vase-article {
-        margin-left: 50px;
-        margin-top: 800px;
+        margin-left: 0px;
+        margin-top: 700px;
+        min-width: none;
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
+
+    header {
+        padding-bottom: 200px;
+    }
 
     h1 {
         letter-spacing: 0;
@@ -841,10 +850,6 @@ footer h3 {
 
     h4:after {
         width: 25%;
-    }
-
-    .blog {
-        height: 90vh;
     }
 
     .blog h2 {
@@ -867,25 +872,31 @@ footer h3 {
         margin-top: 20px;
     }
 
+    .adventures {
+        height: 1400px;
+    }
+
     .vase {
-        height: 150vh;
+        padding-bottom: 0px;
+        height: 800px;
     }
 
     .vase-photo {
         min-width: 270px;
         margin-bottom: 220px;
+        bottom: 75%;
     }
 
     .vase-article {
-        margin-top: 700px;
-        margin-left: 0;
+        margin-top: 580px;
+        min-width: 0;
+        width: 80%;
     }
 }
 
 @media (max-width: 360px) {
 
     header {
-        height: 62vh;
         background-size: cover;
         background-position-x: -200px;
         background-position-y: -100px;
@@ -951,12 +962,8 @@ footer h3 {
         margin-top: 20px;
     }
 
-    .adventures {
-        height: 200vh;
-    }
-
     .vase {
-        height: 130vh;
+        height: 850px;
     }
 
     .vase-photo {
@@ -966,6 +973,7 @@ footer h3 {
 
     .vase-article {
         margin-top: 600px;
+        width: 90%;
     }
 
     .contact h2 {
