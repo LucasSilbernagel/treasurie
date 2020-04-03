@@ -93,6 +93,9 @@ a:hover {
     display: flex;
     align-items: flex-start;
     display: none;
+    position: absolute;
+    right: 30px;
+    z-index: 20;
 }
 
 .hamburger-toggle {
@@ -113,7 +116,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     min-width: 0;
-    width: 140px;
+    width: 200px;
 }
 
 .mobile-nav li {
@@ -132,7 +135,7 @@ a:hover {
 }
 
 #hamburger-toggle:checked ~ .mobile-nav {
-    opacity: 100%;
+    opacity: 95%;
     visibility: visible;
 }
 
@@ -395,7 +398,7 @@ h2 {
         width: 39%;
         min-width: 560px;
         bottom: 45%;
-        z-index: 20;
+        z-index: 10;
         box-shadow: #B0E0E6 30px 30px;
     }
 
@@ -792,6 +795,7 @@ footer h3 {
 
     .hamburger {
         display: inline-block;
+        position: fixed;
     }
 
     h4:after {
