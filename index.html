@@ -14,7 +14,7 @@
     <header id="home">
         <div class="wrapper">
             <nav>
-                <h3 class="top-logo">treasurie</h3>
+                <h3 class="top-logo" aria-label="treasury">treasurie</h3>
                 <ul class="main-nav">
                     <li>
                         <a href="#home">Home</a>
@@ -33,14 +33,14 @@
                 <!-- mobile menu begins -->
                 <div class="hamburger">
                     <input type="checkbox" id="hamburger-toggle" name="hamburger-toggle" class="hamburger-toggle">
-                    <label for="hamburger-toggle">
+                    <label for="hamburger-toggle" id="hamburger-toggle" aria-label="checkbox to open and close mobile navigation menu. To toggle checkbox and open or close the menu, press control option space.">
                         <div class="hamburger-lines">
                             <div class="hamburger-line line1"></div>
                             <div class="hamburger-line line2"></div>
                             <div class="hamburger-line line2b middle"></div>
                             <div class="hamburger-line line3"></div>
                         </div>
-                        <span class="sr-only">Open and close mobile navigation menu</span>
+                        <!-- <span class="sr-only">Open and close mobile navigation menu</span> -->
                     </label>
                     <ul class="mobile-nav">
                         <li><a href="#home">Home</a></li>
@@ -109,13 +109,13 @@
                 <h2 class="contact-us">contact us</h2>
                 <form action="#" method="#" class="contact-form" name="contact-form">
                     <div class="input-flex">
-                        <label for="name" class="sr-only"></label>
+                        <label for="name" id="name" class="sr-only"></label>
                         <input type="text" placeholder="Name" class="name" id="name">
                         <div class="spacing"></div>
-                        <label for="email" class="sr-only"></label>
+                        <label for="email" id="email" class="sr-only"></label>
                         <input type="email" placeholder="Email" class="email" id="email">
                     </div>
-                    <label for="message" class="sr-only"></label>
+                    <label for="message" id="message" class="sr-only"></label>
                     <textarea name="message" id="message" class="message" placeholder="Message"></textarea>
                     <div class="input-flex2">
                         <button class="submit">Submit</button>
@@ -127,7 +127,7 @@
     <footer>
         <div class="wrapper">
             <div class="footer-flex">
-                <h3>treasurie</h3>
+                <h3 aria-label="treasury">treasurie</h3>
             </div>
         </div>
     </footer>
