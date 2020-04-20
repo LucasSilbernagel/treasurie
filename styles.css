@@ -14,11 +14,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 /* General website styles */
 
-/* html,
-body {
-    height: 100%;
-} */
-
 .wrapper {
     width: 84%;
     max-width: 1210px;
