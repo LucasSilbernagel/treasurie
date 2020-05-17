@@ -98,7 +98,6 @@ a:hover {
 }
 
 .mobile-nav {
-    opacity: 0;
     visibility: hidden;
     position: absolute;
     background: #FFFFFF;
@@ -106,7 +105,7 @@ a:hover {
     padding-top: 0;
     z-index: 20;
     top: 60px;
-    right: 0px;
+    right: -200px;
     transition: all 0.4s ease-in;
     display: flex;
     flex-direction: column;
@@ -130,7 +129,7 @@ a:hover {
 }
 
 #hamburger-toggle:checked ~ .mobile-nav {
-    opacity: 95%;
+    right: 0px;
     visibility: visible;
 }
 
@@ -177,7 +176,7 @@ a:hover {
 
 .hamburger-toggle:checked + label .line1,
 .hamburger-toggle:checked + label .line3 {
-    opacity: 0%;
+    visibility: hidden;
 }
 
 .hamburger-toggle:checked + label .line1 {
