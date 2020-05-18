@@ -980,4 +980,17 @@ footer h3 {
     }
 }
 
+@media (max-width: 335px) {
+    .countries {
+        min-width: 290px;
+    }
+
+    .adventures .countries img {
+        width: 290px;
+        height: 290px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 /* Responsive design styles end */
