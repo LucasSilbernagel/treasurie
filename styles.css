@@ -79,7 +79,8 @@ a {
     padding-bottom: 4px;
 }
 
-a:hover {
+a:hover,
+a:focus {
     border-bottom: 2px solid #00C6FF;
 }
 
@@ -228,9 +229,13 @@ h1 {
 }
 
 .header-button:hover,
+.header-button:focus,
 .blog-button:hover,
+.blog-button:focus,
 .vase-button:hover,
-.submit:hover {
+.vase-button:focus,
+.submit:hover,
+.submit:focus {
     background: #00C6FF;
     cursor: pointer;
 }
@@ -308,9 +313,13 @@ h2 {
     }
 
     .left1:hover,
+    .left1:focus,
     .right1:hover,
+    .right1:focus,
     .left2:hover,
-    .right2:hover {
+    .left2:focus,
+    .right2:hover,
+    .right2:focus {
         color: #00C6FF;
     }
 
